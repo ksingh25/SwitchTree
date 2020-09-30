@@ -5,8 +5,8 @@ Please cite this paper if you use this code:
 
 `Jong-Hyouk Lee and Kamal Singh, "SwitchTree: In-network Computing and Traffic Analyses with Random Forests", Neural Computing and Applications (2020)`
  
-We perform in-network analysis of the network data by exploiting the power of programmable data plane. 
-SwitchTree embeds Random Forest algorithm inside a programmable switch such that the 
+We perform in-network analysis of the network data by exploiting the power of programmable data planes. 
+SwitchTree coded in P4 embeds Random Forest algorithm inside a programmable switch such that the 
 Random Forest is configurable and re-configurable at runtime. We show how some flow level 
 stateful features can be estimated, such as the round trip time and bitrate of each flow. 
 
