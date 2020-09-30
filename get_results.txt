@@ -1,0 +1,9 @@
+counter_read counter_pkts 0
+counter_read counter_hash_collisions 0
+counter_read counter_malware 0
+counter_read counter_timeout 0
+counter_read counter_flows 0
+counter_read counter_malware_flows 0
+counter_read counter_true_detection_flows 0
+counter_read counter_false_detection_flows 0
+counter_read counter_false_detection 0
