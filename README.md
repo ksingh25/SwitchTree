@@ -13,18 +13,18 @@ stateful features can be estimated, such as the round trip time and bitrate of e
 # Quick Start Guide
 To run the code
 1. Use or Create a BMv2 VM or machine. Debugging and logging should be disabled otherwise several packets will be lost during real-time tests. (Todo: provide a script to install BMVv2 environment)
-2. Copy the switchtree folder to tutorials/exercises/ folder
+2. Copy the switchtree folder to tutorials/exercises/switchtree folder
 3. cd to switchtree folder 
 
 4. `make`
 
-5. Add rules (trained Decision Trees were translated to SwitchTree P4 rules using a script) to P4 switch by 
+5. Open a new terminal and cd to tutorials/exercises/switchtree folder. Add rules (trained Decision Trees were translated to SwitchTree P4 rules using a script) to P4 switch by 
 
 `simple_switch_CLI < commands_1_tree.txt`
 
 6. Send the traffic using tcpreplay. A demo test file containing 1000 packets is provided in demo_data. It is extracted from UNSW database.
 
-`sudo tcpreplay -i s1-eth1 UNSW_1000_packets.pcap`
+`sudo tcpreplay -i s1-eth1 demo_data/UNSW_1000_packets.pcap`
 
 7. To obtain results, you make check the counter values. The number of malware flows injected (tracked using other means for statistics) is provided by counter_malware_flows and 
 the actually detected ones are provided by counter_true_detection_flows. 
