@@ -1,5 +1,5 @@
 # SwitchTree
-Detection of network attacks using Random Forests
+In-Network detection of attacks using Random Forests
 
 Please cite this paper if you use this code:
 
@@ -10,14 +10,15 @@ SwitchTree coded in P4 embeds Random Forest algorithm inside a programmable swit
 Random Forest is configurable and re-configurable at runtime. We show how some flow level 
 stateful features can be estimated, such as the round trip time and bitrate of each flow. 
 
+# Quick Start Guide
 To run the code
-1. Use or Create a BMv2 VM or machine. Debugging should be disabled otherwise several packets will be lost. (Todo: provide a script to install BMVv2 environment)
+1. Use or Create a BMv2 VM or machine. Debugging and logging should be disabled otherwise several packets will be lost during real-time tests. (Todo: provide a script to install BMVv2 environment)
 2. Copy the switchtree folder to tutorials/exercises/ folder
 3. cd to switchtree folder 
 
 4. `make`
 
-5. Add rules to P4 switch by 
+5. Add rules (trained Decision Trees were translated to SwitchTree P4 rules using a script) to P4 switch by 
 
 `simple_switch_CLI < commands_1_tree.txt`
 
