@@ -13,7 +13,7 @@ stateful features can be estimated, such as the round trip time and bitrate of e
 # Quick Start Guide
 To run the code
 1. Use or Create a BMV2 VM or machine. Debugging and logging should be disabled otherwise several packets will be lost during real-time tests. (Todo: provide a script to install BMV2 environment)
-2. Copy the switchtree folder to tutorials/exercises/switchtree folder
+2. Copy the switchtree folder to tutorials/exercises/ folder
 3. cd to switchtree folder 
 
 4. `make`
