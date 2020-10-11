@@ -9,6 +9,7 @@ We perform in-network analysis of the network data by exploiting the power of pr
 SwitchTree coded in P4 embeds Random Forest algorithm inside a programmable switch such that the 
 Random Forest is configurable and re-configurable at runtime. We show how some flow level 
 stateful features can be estimated, such as the round trip time and bitrate of each flow. 
+Main references for this work are [IISY](https://github.com/cucl-srg/IIsy) and [pForest](https://arxiv.org/abs/1909.05680).
 
 # Quick Start Guide
 To run the code
