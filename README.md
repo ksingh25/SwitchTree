@@ -13,9 +13,15 @@ Main references for this work are [IISY](https://github.com/cucl-srg/IIsy) and [
 
 # Quick Start Guide
 To run the code
-1. Use or Create a BMV2 VM or machine. Debugging and logging should be disabled otherwise several packets will be lost during real-time tests. (Todo: provide a script to install BMV2 environment)
-2. Copy the switchtree folder to tutorials/exercises/ folder
-3. cd to switchtree folder 
+1. Use or Create a BMV2 VM or machine. For example you may download the VM from here provided by P4 developer day: https://drive.google.com/uc?id=1lYF4NgFkYoRqtskdGTMxy3sXUV0jkMxo&export=download
+2. Debugging and logging should be disabled otherwise several packets will be lost during real-time tests. This can be done by downloading the source of behavioral-model (https://github.com/p4lang/behavioral-model) and recompiling it using the options that disable logging
+`cd behavioral-model/
+sudo ./configure 'CXXFLAGS=-g -O3' 'CFLAGS=-g -O3' --disable-logging-macros --disable-elogger
+sudo make
+sudo make install`
+
+3. Copy the switchtree folder to tutorials/exercises/ folder
+4. cd to switchtree folder 
 
 4. `make`
 
