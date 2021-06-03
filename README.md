@@ -59,3 +59,5 @@ Note you may need to exit and type make again to reinitialize and do a new test 
 `sudo make`
 
 `sudo make install`
+
+9. If you want to train your own decison trees and random forests then please see the scripts folder.
