@@ -51,7 +51,7 @@ To use SwitchTree with 3 trees:
 Note you may need to exit and type make again to reinitialize and do a new test with new data. 
 
 8. In case you want to do performance evaluations and heavy tests: debugging and logging should be disabled otherwise several packets will be lost during real-time tests. This can be done by downloading the source of behavioral-model (https://github.com/p4lang/behavioral-model) to your home directory and recompiling it using the options that disable logging
-
+(TODO: have put the commands that I remember. Need to test and verify them.)
 `cd behavioral-model/`
 
 `sudo ./configure 'CXXFLAGS=-g -O3' 'CFLAGS=-g -O3' --disable-logging-macros --disable-elogger`
